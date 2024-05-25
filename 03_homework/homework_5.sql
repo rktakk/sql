@@ -9,7 +9,20 @@ Think a bit about the row counts: how many distinct vendors, product names are t
 How many customers are there (y). 
 Before your final group by you should have the product of those two queries (x*y).  */
 
-PENDING
+SELECT 
+    v.vendor_name,
+    p.product_name,
+    SUM(vi.original_price * 5) AS total_revenue_per_product
+FROM 
+    (SELECT DISTINCT vendor_id, product_id, original_price FROM vendor_inventory) AS vi
+JOIN 
+    vendor AS v ON vi.vendor_id = v.vendor_id
+JOIN 
+    product AS p ON vi.product_id = p.product_id
+CROSS JOIN 
+    customer AS c
+GROUP BY 
+    v.vendor_name, p.product_name;
 
 -- INSERT
 /*1.  Create a new table "product_units". 
