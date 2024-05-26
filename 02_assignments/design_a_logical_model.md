@@ -32,7 +32,6 @@ Review the AdventureWorks Schema [here](https://i.stack.imgur.com/LMu4W.gif)
 
 Highlight at least two differences between it and your ERD. Would you change anything in yours?
 ```
-Your answer...
 The headings and the colour coding in the AdventureWorks Schema makes it easier to read and find the information required quickly. I would like to design future ERDs keeping this in mind. 
 
 # Criteria
