@@ -5,18 +5,27 @@ Create a logical model for a small bookstore. 📚
 
 At the minimum it should have employee, order, sales, customer, and book entities (tables). Determine sensible column and table design based on what you know about these concepts. Keep it simple, but work out sensible relationships to keep tables reasonably sized. Include a date table. There are several tools online you can use, I'd recommend [_Draw.io_](https://www.drawio.com/) or [_LucidChart_](https://www.lucidchart.com/pages/).
 
+[Question-1.pdf](https://github.com/rktakk/sql/files/15449008/Question-1.pdf)
+
+
 ## Question 2
 We want to create employee shifts, splitting up the day into morning and evening. Add this to the ERD.
 
+[Question-2.pdf](https://github.com/rktakk/sql/files/15449012/Question-2.pdf)
+
+
 ## Question 3
 The store wants to keep customer addresses. Propose two architectures for the CUSTOMER_ADDRESS table, one that will retain changes, and another that will overwrite. Which is type 1, which is type 2?
+
+[Question-3.pdf](https://github.com/rktakk/sql/files/15449098/Question-3.pdf)
 
 _Hint, search type 1 vs type 2 slowly changing dimensions._
 
 Bonus: Are there privacy implications to this, why or why not?
 ```
 Your answer...
-```
+
+Please see attached the proposed architectures for the CUSTOMER_ADDRESS table. Type 2 will allow for changes to be retained, creating a new record each time the address is updated. Type 1 will overwrite the information with no historical record to reference.
 
 ## Question 4
 Review the AdventureWorks Schema [here](https://i.stack.imgur.com/LMu4W.gif)
@@ -24,7 +33,7 @@ Review the AdventureWorks Schema [here](https://i.stack.imgur.com/LMu4W.gif)
 Highlight at least two differences between it and your ERD. Would you change anything in yours?
 ```
 Your answer...
-```
+The headings and the colour coding in the AdventureWorks Schema makes it easier to read and find the information required quickly. I would like to design future ERDs keeping this in mind. 
 
 # Criteria
 
